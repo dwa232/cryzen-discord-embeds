@@ -66,7 +66,9 @@ def serve_embed(embed_id):
             border-left: 4px solid #5865f2;
             border-radius: 4px;
             padding: 16px;
+            padding-right: 80px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
         }
         .embed-author {
             display: flex;
@@ -113,11 +115,12 @@ def serve_embed(embed_id):
             line-height: 1.375;
         }
         .embed-thumbnail {
-            float: right;
-            width: 80px;
-            height: 80px;
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            width: 60px;
+            height: 60px;
             border-radius: 8px;
-            margin-left: 16px;
             object-fit: cover;
         }
         .embed-footer {
