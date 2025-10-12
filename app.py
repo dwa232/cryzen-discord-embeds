@@ -34,16 +34,16 @@ def serve_embed(embed_id):
     <!-- Open Graph meta tags for Discord embeds -->
     <meta property="og:title" content="{{ title }}" />
     <meta property="og:description" content="{{ description }}" />
-    <meta property="og:image" content="{{ image_url }}" />
+    {% if image_url %}<meta property="og:image" content="{{ image_url }}" />{% endif %}
     <meta property="og:url" content="{{ url }}" />
     <meta property="og:type" content="{{ og_type }}" />
     <meta property="og:site_name" content="{{ site_name }}" />
     
     <!-- Twitter Card meta tags (for better compatibility) -->
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="{{ title }}" />
     <meta name="twitter:description" content="{{ description }}" />
-    <meta name="twitter:image" content="{{ image_url }}" />
+    {% if image_url %}<meta name="twitter:image" content="{{ image_url }}" />{% endif %}
     
     <!-- Theme color for Discord -->
     <meta name="theme-color" content="{{ color }}" />
@@ -132,7 +132,6 @@ def serve_embed(embed_id):
 </head>
 <body>
     <div class="embed-container">
-        <img class="embed-thumbnail" src="{{ image_url }}" alt="Thumbnail">
         <div class="embed-title">{{ title }}</div>
         
         <div class="embed-description">{{ description }}</div>
