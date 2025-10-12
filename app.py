@@ -131,11 +131,6 @@ def serve_embed(embed_id):
 </head>
 <body>
     <div class="embed-container">
-        <div class="embed-author">
-            <img class="embed-author-icon" src="{{ image_url }}" alt="Cryzen">
-            <span class="embed-author-name">{{ site_name }}</span>
-        </div>
-        
         <div class="embed-title">{{ title }}</div>
         
         <img class="embed-thumbnail" src="{{ image_url }}" alt="Thumbnail">
