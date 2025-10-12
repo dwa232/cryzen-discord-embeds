@@ -66,9 +66,7 @@ def serve_embed(embed_id):
             border-left: 4px solid #5865f2;
             border-radius: 4px;
             padding: 16px;
-            padding-right: 80px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-            position: relative;
         }
         .embed-author {
             display: flex;
@@ -115,13 +113,13 @@ def serve_embed(embed_id):
             line-height: 1.375;
         }
         .embed-thumbnail {
-            position: absolute;
-            top: 16px;
-            right: 16px;
-            width: 60px;
-            height: 60px;
-            border-radius: 8px;
+            float: right;
+            width: 40px;
+            height: 40px;
+            border-radius: 6px;
             object-fit: cover;
+            margin-left: 12px;
+            margin-top: -4px;
         }
         .embed-footer {
             font-size: 12px;
@@ -134,9 +132,8 @@ def serve_embed(embed_id):
 </head>
 <body>
     <div class="embed-container">
-        <div class="embed-title">{{ title }}</div>
-        
         <img class="embed-thumbnail" src="{{ image_url }}" alt="Thumbnail">
+        <div class="embed-title">{{ title }}</div>
         
         <div class="embed-description">{{ description }}</div>
         
