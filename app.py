@@ -136,10 +136,6 @@ def serve_embed(embed_id):
         <div class="embed-title">{{ title }}</div>
         
         <div class="embed-description">{{ description }}</div>
-        
-        <div class="embed-footer">
-            Powered by Cryzen Self-Bot • {{ timestamp }}
-        </div>
     </div>
 </body>
 </html>
